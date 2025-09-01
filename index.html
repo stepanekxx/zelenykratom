@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JednoParagraf – one‑pager</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #222;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 0.8rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #222;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem;
+      background: linear-gradient(to bottom, #f9f9f9, #fff);
+    }
+    .hero span {
+      font-size: 4rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      background: white;
+      margin: 1rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    form button {
+      background: #222;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>§ JednoParagraf</strong></div>
+    <nav>
+      <a href="#uvod">Úvod</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#reference">Reference</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="uvod" class="hero">
+    <h1>Jedna stránka. Jeden <span>§</span>.</h1>
+    <p>Elegantní one‑pager navržený pro právníky, freelancery a projekty, které potřebují
+    jasně a přehledně říct vše podstatné na jediné stránce.</p>
+  </section>
+
+  <section id="sluzby">
+    <h2>Co na stránce najdete</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Přehled nabídky</h3>
+        <p>Stručně a jasně vyjmenujte, co děláte a pro koho.</p>
+      </div>
+      <div class="card">
+        <h3>Důvěryhodnost</h3>
+        <p>Reference, loga klientů a krátké příběhy úspěchu.</p>
+      </div>
+      <div class="card">
+        <h3>Srozumitelnost</h3>
+        <p>Minimalistická typografie inspirovaná zákony a paragrafy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reference" style="background:#f7f7f7;">
+    <h2>Reference</h2>
+    <div class="grid">
+      <div class="card">„Skvělá práce. Jednoduchá stránka, která funguje.“<br><small>— Spokojený klient #1</small></div>
+      <div class="card">„Přesně tolik textu, kolik je potřeba.“<br><small>— Spokojený klient #2</small></div>
+      <div class="card">„Minimalismus, který funguje.“<br><small>— Spokojený klient #3</small></div>
+    </div>
+  </section>
+
+  <section id="cenik">
+    <h2>Ceník</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Základ</h3>
+        <p><strong>9 900 Kč</strong></p>
+        <ul>
+          <li>1 sekce + kontakt</li>
+          <li>Základní SEO</li>
+          <li>Dodání textů</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Profi</h3>
+        <p><strong>19 900 Kč</strong></p>
+        <ul>
+          <li>Vše ze Základu</li>
+          <li>Ceník + Reference</li>
+          <li>Napojení formuláře</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Na míru</h3>
+        <p><strong>Individuálně</strong></p>
+        <ul>
+          <li>Design na klíč</li>
+          <li>Copywriting</li>
+          <li>Měření a analytika</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" style="background:#f7f7f7;">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Jméno" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="text" placeholder="Předmět">
+      <textarea placeholder="Vaše zpráva…"></textarea>
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>§ © 2025 JednoParagraf – Vyrobeno s láskou k minimalismu</p>
+  </footer>
+</body>
+</html>
